@@ -12,21 +12,21 @@ function reverseCharacters(str) {
   console.log(string);
   string = string.join(" ");
   console.log(string);*/
+  //f) Use method chaining to reduce the lines of code within the function.
   string = str.split(" ").reverse().join(" ");
   console.log(string);
   }
 //c) Use join to create the reversed string and return that string from the function.
-  
 //d) Below the function, define and initialize a variable to hold a string.
 //e) Use console.log(reverseCharacters(myVariableName)); to call the function and verify that it correctly reverses the characters in the string.
-//f) Use method chaining to reduce the lines of code within the function.
 else if(typeof str === 'number') {
 numbers = str.toString(); 
 numbers = numbers.split("").reverse().join("");
-//numbers = numbers.parseInt();                      
 console.log(numbers);
-}
+numbers = parseInt(numbers);                
+console.log(numbers);      
 
+}
 }
 reverseCharacters("reverse this string");
 reverseCharacters(1234);
