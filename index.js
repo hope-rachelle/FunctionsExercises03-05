@@ -6,12 +6,6 @@ function reverseCharacters(str) {
   let numbers = "";
   //b) Within the function, split the string into an array, then reverse the array.
   if (typeof str === 'string') {
-  /*string = str.split(" ");
-  console.log(string);
-  string = string.reverse();
-  console.log(string);
-  string = string.join(" ");
-  console.log(string);*/
   //f) Use method chaining to reduce the lines of code within the function.
   string = str.split(" ").reverse().join(" ");
   console.log(string);
@@ -25,7 +19,6 @@ numbers = numbers.split("").reverse().join("");
 console.log(numbers);
 numbers = parseInt(numbers);                
 console.log(numbers);      
-
 }
 }
 reverseCharacters("reverse this string");
@@ -40,16 +33,12 @@ reverseCharacters(1234);
 
 //3) Create a new function with one parameter, which is the array we want to change. The function should:
 function changeArray(arr) {
-  let myArray = [];
-  console.log(arr);
+  let newArray = [];
   for (let i=0; i < arr.length; i++ ){
     console.log(arr[i]);
   }
-  let newArray = arr.reverse();
+  newArray = arr.reverse();
   console.log(newArray);
-  newArray = newArray.join(" ");
-  myArray = newArray;
-  console.log(myArray);
 }
 //a) Define and initialize an empty array.
 //b) Loop through the old array.
@@ -57,9 +46,9 @@ function changeArray(arr) {
 //d) Add the reversed string (or number) to the array defined in part ‘a’.
 //e) Return the final, reversed array.
 //f) Be sure to print the results from each test case in order to verify your code.
-changeArray(['apple', 'potato', 'Capitalized Words']);
-
-
 let arrayTest1 = ['apple', 'potato', 'Capitalized Words'];
 let arrayTest2 = [123, 8897, 42, 1168, 8675309];
 let arrayTest3 = ['hello', 'world', 123, 'orange'];
+changeArray(arrayTest1);
+changeArray(arrayTest2);
+changeArray(arrayTest3);
