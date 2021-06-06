@@ -7,8 +7,9 @@ function reverseCharacters(str) {
   //b) Within the function, split the string into an array, then reverse the array.
   if (typeof str === 'string') {
   //f) Use method chaining to reduce the lines of code within the function.
-  string = str.split(" ").reverse().join(" ");
-  console.log(string);
+  string = str.split("").reverse().join("");
+  return string;
+  
   }
 //c) Use join to create the reversed string and return that string from the function.
 //d) Below the function, define and initialize a variable to hold a string.
@@ -18,11 +19,12 @@ numbers = str.toString();
 numbers = numbers.split("").reverse().join("");
 console.log(numbers);
 numbers = parseInt(numbers);                
-console.log(numbers);      
+return numbers;     
 }
 }
-reverseCharacters("reverse this string");
-reverseCharacters(1234);
+console.log(reverseCharacters("reverse this string"));
+
+console.log(reverseCharacters(1234));
 
 
 //2) The 'split' method does not work on numbers, but we want the function to return a number with all the digits reversed (e.g. 1234 converts to 4321 and NOT the string "4321")
